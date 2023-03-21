@@ -1,0 +1,59 @@
+.navbar-custom{
+  background-color: black;
+  color: white;
+  opacity:0.8;
+
+}
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#nav{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+.navbar-custom .navbar-brand {
+  letter-spacing: 0.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar-custom .nav-link:hover {
+  color: white;
+  text-shadow: 0px 0px 10px #fff,
+  0px 0px 20px  #fff,
+  0px 0px 30px #fff,
+  0px 0px 40px #fff; 
+}
+
+.navbar-custom .nav-link.active, 
+.navbar-custom .nav-link:hover {
+  color: white;
+}
+
+  .navbar-custom .nav-link.active, 
+  .navbar-custom .nav-link:hover {
+    color: white;
+  }
+
+
+.hover-image {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
