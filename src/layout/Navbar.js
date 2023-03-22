@@ -1,9 +1,9 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import Metamask from "../MetamaskLoginButton.js";
-import "../../App.css";
-import BC from "../../assets/images/saubc-white.png"
-import BC2 from "../../assets/images/saubc.png"
+import Metamask from "../components/MetamaskLoginButton";
+import "../App.css";
+import BC from "../assets/images/saubc-white.png"
+import BC2 from "../assets/images/saubc.png"
 
 function MyNavbar() {
   return (

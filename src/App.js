@@ -1,6 +1,9 @@
 
-import Navbar from "./components/Homepage/Navbar.js"
+import Navbar from "./layout/Navbar.js"
 import CryptoDonate from "./components/Donate.js"
+import MyEditor from "./components/Wyswyg.js"
+
+
 
 
 
@@ -8,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <CryptoDonate />
+      <CryptoDonate/>
+      <MyEditor/>
     </div>
   );
 }
