@@ -57,3 +57,103 @@
 .image-container:hover .hover-image {
   opacity: 1;
 }
+.slider {
+  position: relative;
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.slider__slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px; 
+  box-sizing: border-box; 
+}
+
+
+.slider__slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__slide.active {
+  transform: translateX(0);
+}
+
+.slider__slide:not(.active) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+}
+
+.slider__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider__controls button {
+  background-color: #230227;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider__controls button:hover {
+  background-color: #614cdb;
+}
+
+.slider__controls button:first-child {
+  margin-left: 0;
+}
+
+.slider__controls button:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  margin-top: 50px; 
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
